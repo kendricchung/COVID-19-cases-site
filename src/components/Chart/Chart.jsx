@@ -59,7 +59,7 @@ const Chart = ({ data, country }) => {
 
     return (
         <div className={styles.container}>
-            {country ? barChart: lineChart}
+            {(country && country !== 'global') ? barChart: lineChart}
         </div>
     )
 }
