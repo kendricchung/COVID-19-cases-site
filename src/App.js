@@ -27,14 +27,15 @@ class App extends React.Component {
         const title = "COVID-19 Cases";
          
         return (
-            <div className={styles.container}>
-                <Helmet>
-                    <title>{title}</title> */}
-                </Helmet>
-                <Cards data={data}></Cards> 
-                    <CountryPicker handleCountryChange={this.handleCountryChange}></CountryPicker>
-                    <Chart data={data} country={country}></Chart>
-            </div>
+            // <div className={styles.container}>
+            //     <Helmet>
+            //         <title>{title}</title> */}
+            //     </Helmet>
+            //     <Cards data={data}></Cards> 
+            //         <CountryPicker handleCountryChange={this.handleCountryChange}></CountryPicker>
+            //         <Chart data={data} country={country}></Chart>
+            // </div>
+            <h1>Hello World</h1>
         )
     }
 }
