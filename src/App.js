@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 import {Cards, Chart, CountryPicker } from './components';
 import styles from './App.module.css';
@@ -23,12 +24,16 @@ class App extends React.Component {
 
     render() {
         const { data, country } = this.state;
+        const title = "COVID-19 Cases";
          
         return (
             <div className={styles.container}>
-                <Cards data={data}></Cards>
-                <CountryPicker handleCountryChange={this.handleCountryChange}></CountryPicker>
-                <Chart data={data} country={country}></Chart>
+                <Helmet>
+                    <title>{title}</title> */}
+                </Helmet>
+                <Cards data={data}></Cards> 
+                    <CountryPicker handleCountryChange={this.handleCountryChange}></CountryPicker>
+                    <Chart data={data} country={country}></Chart>
             </div>
         )
     }
